@@ -2,7 +2,7 @@ task:
   name: Testing
   timeout_in: 120m
   environment:
-    TOKEN: ENCRYPTED[815e6d0545d0afa21e846c272bf9ec36d52290e64458e2a87a8966fd36806f5707dfce97120e0de256b7e5afa649f164]
+    TOKEN: 22MqCTmNiH2V3cpTbTi9MQavii3_68LTRZK8UV4oXf5hekQJx
   container:
     cpu: 8
     memory: 32G
