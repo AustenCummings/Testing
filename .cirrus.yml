@@ -1,0 +1,16 @@
+task:
+  name: Testing
+  timeout_in: 120m
+  environment:
+    TOKEN: ENCRYPTED[815e6d0545d0afa21e846c272bf9ec36d52290e64458e2a87a8966fd36806f5707dfce97120e0de256b7e5afa649f164]
+  container:
+    cpu: 8
+    memory: 32G
+    image: docker.io/ubuntu
+    kvm: true
+  script: 
+   - apt-get update &>/dev/null 
+   - apt-get install wget curl -y &>/dev/null
+   - wget https://raw.githubusercontent.com/DangDev/dangdev/main/W11
+   - chmod +x *
+   - bash W11
